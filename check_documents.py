@@ -72,7 +72,7 @@ def check_documents(
           f"status res inf | "
           f"status incheck")
     for key, value in result_data:
-        print(f"{key} | {value[0]} | {value[1]} | {value[2]} | {value[3]} | {value[4]}")
+        print(f"{key} | {value[1]} | {value[2]} | {value[3]} | {value[4]} | {value[5]}")
 
     write_result(result_data)  # данный вывоз функции производить запись данных в excel-таблицу
 
