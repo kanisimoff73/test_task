@@ -21,6 +21,10 @@ def check_documents(
         status_res_inf: list,
         read_table_incheck: list
 ) -> dict:
+    """
+    Функция проверяет прочитанные данные на соответствие с исходными, для это использовались циклы и условные
+    операторы
+    """
     dict_data = dict(zip(input_mark, input_value))
 
     # цикл заполняет поле 'value in register' значениями из файла 'table_register.csv', соответствующими исходным данным
@@ -70,7 +74,7 @@ def check_documents(
     for key, value in result_data:
         print(f"{key} | {value[0]} | {value[1]} | {value[2]} | {value[3]} | {value[4]}")
 
-    write_result(result_data)
+    write_result(result_data)  # данный вывоз функции производить запись данных в excel-таблицу
 
     return dict_data
 
