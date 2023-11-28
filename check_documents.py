@@ -1,5 +1,3 @@
-import openpyxl
-
 from write_result import write_result
 from read_documents import read_documents
 

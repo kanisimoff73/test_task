@@ -1,8 +1,15 @@
 import pandas as pd
 import csv
+from typing import Dict, List, Tuple, Any
 
 
-def read_documents(input_data: str, table_register: str, table_journal: str, table_res_inf: str, table_incheck: str):
+def read_documents(
+        input_data: str,
+        table_register: str,
+        table_journal: str,
+        table_res_inf: str,
+        table_incheck: str
+) -> Tuple[List[Any], List[Any], List[List[Any]], Dict[str, int], Dict[str, int], List[str], List[List[str]]]:
     """Функция считывает данные с файлов и при помощи циклов нормализует данные для дальнейшей работы с ними"""
     value_in_register = dict()
     total_value_in_journal = dict()
